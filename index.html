@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Revision Hub</title>
+    <!-- Use the Inter font for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #E5E5E5;
+            overflow-x: hidden;
+        }
+        .container-wrapper {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text-netflix-red {
+            color: #E50914;
+        }
+        .bg-netflix-red {
+            background-color: #E50914;
+        }
+        .bg-gradient-pulse {
+            background: linear-gradient(135deg, #E50914, #E50914, #333333, #333333);
+            background-size: 200% 200%;
+            animation: pulse-gradient 5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .animated-box {
+            position: relative;
+            background: #222;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .animated-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(#E50914, #882222, #555555, #222222, #111111);
+            animation: rotate 10s linear infinite;
+        }
+        .animated-box:hover {
+            transform: scale(1.03);
+        }
+        .animated-box-content {
+            position: relative;
+            z-index: 10;
+            padding: 2rem;
+            background: rgba(18, 18, 18, 0.95);
+            border-radius: 1rem;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            background-color: #333;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 1rem;
+            background: linear-gradient(to right, #E50914, #ff5e5e);
+            border-radius: 9999px;
+            transition: width 0.5s ease;
+        }
+        .hard-line {
+            height: 4px;
+            background: linear-gradient(to right, #E50914, #E50914, #333333, #333333);
+            border-radius: 9999px;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .text-gradient {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen p-4 md:p-8">
+
+    <!-- Navbar -->
+    <header class="container-wrapper flex justify-between items-center py-4 mb-8">
+        <h1 class="text-3xl font-bold text-netflix-red">Revision Hub</h1>
+    </header>
+
+    <main class="container-wrapper space-y-16">
+
+        <!-- Hero Section -->
+        <section id="intro" class="flex flex-col md:flex-row items-center justify-between p-8 rounded-2xl bg-gradient-pulse shadow-2xl">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                    Welcome to the <span class="text-white bg-netflix-red px-2 py-1 rounded-md">Ultimate</span> Revision Hub! ✨
+                </h2>
+                <p class="text-lg text-gray-300">
+                    Your masterplan to ace the exam. We'll break down complex concepts into bite-sized, engaging chunks. Let's get started! 🚀
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <div class="w-full h-48 md:h-64 bg-gray-700 rounded-xl overflow-hidden shadow-lg animate-pulse">
+                    <!-- Placeholder for an image or animated graphic -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Sections -->
+        <section id="content" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Lesson 1: On a Call -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">1. Em uma chamada 📞</h3>
+                    <div class="space-y-4">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-500 to-pink-500">I am on a call</p>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-green-400 to-blue-500">I am on a phone call</p>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-yellow-400 to-red-500">I am on a conference call</p>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-orange-400 to-yellow-500">I am on Zoom / Teams / Skype</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 1 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Exercise Time! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        You are participating in a group video call with your colleagues to discuss a project. How would you describe this situation in English?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson1Answer" type="text" placeholder="Type your answer here..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson1Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Check Answer
+                        </button>
+                    </div>
+                    <p id="lesson1Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 2: Parts of the Day -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">2. Partes do dia ☀️</h3>
+                    <div class="space-y-4">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-blue-400 to-teal-500">Good morning</p>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-orange-400 to-yellow-500">Good afternoon</p>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-indigo-500 to-purple-600">Good evening</p>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **Good night** é usado para se despedir ao final do dia.</p>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 2 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        São 14h e você está a cumprimentar um amigo. Como o cumprimentaria?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson2Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson2Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson2Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 3: Participar numa reunião -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">3. Participar numa reunião 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p><strong>Presente do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-green-500 to-lime-400">Eu **attend a meeting** com a equipa.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-sky-400 to-indigo-500">Eles **join a meeting** todas as manhãs.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-red-500 to-orange-400">Ele **is in a meeting** neste momento.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-lime-400 to-green-500">Ela **watches the meeting** online.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 space-y-4 text-xs text-gray-300">
+                        <p><strong>Passado do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Eu **attended a meeting** com a equipa de marketing ontem.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-green-400 to-cyan-500">Ele **joined a meeting** no Zoom há cinco minutos.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-pink-400 to-rose-500">Eles **were in a meeting** quando ligaste.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Ela **watched the meeting** em vez de participar.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 space-y-4 text-xs text-gray-300">
+                        <p><strong>Futuro do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Ela **will attend a meeting** com o cliente na terça-feira.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Nós **will join a meeting** para discutir o projeto às 10h.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-lime-400 to-green-500">O nosso gestor **will be in a meeting** pelo resto da tarde.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-red-400 to-purple-500">Ele **will watch the meeting** da sua mesa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 3 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Você está a preparar-se para ir a uma reunião com a sua equipa. Como diria a um colega que está a ir?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson3Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson3Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson3Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 4: Participante numa chamada -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">4. Participante numa chamada 🗣️</h3>
+                    <div class="space-y-4">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-cyan-400 to-blue-500">participant on a call</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Todos os **participants on the call** conseguem ver o ecrã partilhado.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Ele é um **participant in the meeting**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercise Box for Lesson 4 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como se referiria a alguém que está a falar e outras pessoas a ouvir durante uma reunião?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson4Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson4Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson4Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 5: Assistir filmes/TV -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">5. Assistir filmes / TV 📺</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p><strong>Presente do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Eu estou a **watching a movie** na Netflix.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-green-400 to-cyan-500">Ele **watches TV** todas as noites.</li>
+                        </ul>
+                        <p><strong>Passado do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-pink-400 to-rose-500">Eles **watched a TV show** juntos.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Ela **watched a movie** ontem.</li>
+                        </ul>
+                        <p><strong>Futuro do Indicativo:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Nós **will watch a new film** este fim de semana.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-lime-400 to-green-500">Eu vou **going to watch a TV series** mais tarde.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercise Box for Lesson 5 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um amigo que assistiu a um grande filme ontem?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson5Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson5Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson5Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 6: Have got -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">6. Tenho uma reunião (use "have got") 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">I **have got a meeting** às 10h.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-green-400 to-cyan-500">He **has got an appointment** amanhã.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: "Have got" é informal e comum no inglês britânico. No inglês americano, "have" é mais comum. "I have a meeting" é uma alternativa válida.</p>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 6 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que tem uma reunião com o gestor esta tarde? Use **"have got"**.
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson6Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson6Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson6Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+            
+            <!-- Lesson 7: Expressing Obligation -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">7. Expressando Obrigação (use "have got to") ✍️</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-pink-400 to-rose-500">Nós **have got to finish this report** hoje.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Eu **have got to be at the office** até às 9h.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: "Have got to" expressa uma forte obrigação ou necessidade, semelhante a "have to", mas frequentemente com mais ênfase.</p>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 7 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Você está atrasado para um voo. Como diria que precisa de se apressar para o aeroporto? Use **"have got to"**.
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson7Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson7Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson7Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+            
+            <!-- Lesson 8: By como prazo de entrega -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">8. By como prazo de entrega ⏰</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">O relatório tem de estar terminado **by Friday**.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Por favor, entregue o seu trabalho **by 5 PM**.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Preciso do feedback **by the end of the day**.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: Use "by" para indicar um horário ou data específica em que uma ação deve ser concluída. Significa "no máximo até" ou "antes ou na data de".</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 8 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Você está a dar uma tarefa a um colega de trabalho e quer que ela seja terminada antes do fim do dia útil. Como lhe diria? Use **"by"**.
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson8Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson8Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson8Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 9: Meeting vs. Meet -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">9. Reunião (meeting vs. meet) 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-pink-400 to-rose-500">Nós temos uma **meeting** da equipa às 15h.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Eu vou **meet** com o cliente amanhã.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **"Meeting"** é um substantivo (uma coisa ou evento). **"Meet"** é um verbo (uma ação). Embora "Google Meet" use a palavra "meet", para reuniões em geral use a palavra "meeting".</p>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 9 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que precisa de encontrar um horário para discutir um projeto com ele? Use o verbo **"meet"**.
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson9Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson9Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson9Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 10: Host -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">10. Host (organizador da reunião) 🎤</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">O **host of the meeting** partilhará a agenda.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Ela **host a meeting** para discutir o projeto.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **"Host"** pode ser um substantivo (uma pessoa) ou um verbo (a ação de organizar). É um termo-chave em ambientes profissionais.</p>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 10 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como descreveria a pessoa que está encarregada de uma videochamada?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson10Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson10Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson10Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 11: Host (organizador de workshop/feira) -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">11. Host (organizador de workshop/feira) 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-green-500 to-lime-400">Host (substantivo): A pessoa ou empresa responsável por um evento.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">A empresa de software é a **host of the workshop**.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">A conferência terá vários **hosts** para diferentes sessões.</li>
+                        </ul>
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-pink-400 to-rose-500">Host (verbo): Organizar e gerir um evento.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-lime-400 to-green-500">A nossa empresa vai **host a job fair** no próximo mês.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-red-400 to-purple-500">Eles planeiam **host a free workshop** sobre análise de dados.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-xs font-semibold text-gray-300">Nota: Num contexto profissional, "host" é uma palavra poderosa e concisa. Em caso de dúvida, pode sempre usar "organizer".</p>
+                </div>
+            </div>
+            
+            <!-- Exercise Box for Lesson 11 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Você quer dizer a um colega de trabalho que o seu departamento está a organizar um workshop na próxima semana. Como diria isto usando o verbo **"host"**?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson11Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson11Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson11Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 12: Business Fair -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">12. Business Fair 💼</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Business fair</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">A nossa empresa tem um stand na **annual business fair**.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Planeamos ir à **business fair** para encontrar novos clientes.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: Outros termos são "trade show" ou "exhibition", que são frequentemente mais específicos para uma determinada indústria ou tipo de produto/serviço.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 12 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        A sua empresa está a participar num grande evento comercial para promover os seus produtos. Como chamaria a este evento?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson12Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson12Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson12Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 13: Attended an in-person meeting -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">13. Participou de uma reunião presencial 🗣️</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-cyan-400 to-blue-500">attended an in-person meeting</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Eu **attended an in-person meeting** com a equipa.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Nós **attended an in-person meeting** para discutir o projeto.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: "In-person" esclarece que a reunião não foi virtual ou por telefone. É um termo comum no mundo profissional para distinguir entre reuniões físicas e virtuais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 13 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que vai estar numa reunião física com os clientes amanhã?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson13Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson13Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson13Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 14: Attended an in-person lecture -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">14. Assistiu a uma palestra presencial 👨‍🏫</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-orange-400 to-yellow-500">attended an in-person lecture</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Eu **attended an in-person lecture** por um especialista de renome.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Ele **attended an in-person lecture** sobre um novo tópico na universidade.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: Uma "lecture" é uma palestra formal dada a uma audiência, frequentemente num ambiente académico ou educacional. Também pode dizer **"attended a lecture"** se o aspeto presencial for compreendido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 14 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um amigo que esteve numa palestra física dada por um cientista famoso?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson14Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson14Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson14Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 15: Worked in-person every day -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">15. Trabalhei presencial todos os dias 🏢</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-blue-400 to-purple-500">worked in-person every day</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-cyan-400 to-blue-500">Eu **worked in-person every day** no mês passado.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Ela **has worked in-person every day** desde que a nova política foi implementada.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **"In-person"** é a forma mais comum e profissional de dizer "presencial".</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercise Box for Lesson 15 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que prefere trabalhar no escritório todos os dias?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson15Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson15Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson15Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 16: Go + preposition TO -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">16. Go + Preposição TO ➡️</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-cyan-400 to-blue-500">go to [a place]</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Eu **go to the office** todos os dias.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">Ela **went to the conference** na semana passada.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">Eles estão **going to the meeting room**.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: "Go" é quase sempre seguido de "to" para indicar movimento em direção a um destino. Uma exceção é "go home", onde "to" não é usado porque "home" funciona como um advérbio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 16 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que está a ir para a sala de reuniões?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson16Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson16Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson16Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+            <!-- Lesson 17: Virtual training -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">17. Treinamento virtual (online training) 🖥️</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">online training</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">Eu completei um curso de **online training** em marketing digital.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">A nossa empresa oferece vários programas de **online training** para funcionários.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: Use "online training" para especificar um curso ou programa concluído pela internet. Também pode dizer **"virtual training"** ou **"remote training."**</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 17 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria ao seu gerente que está inscrito num programa de treinamento virtual?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson17Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson17Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson17Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+
+             <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+             <!-- Lesson 18: My boss is on a video call -->
+             <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">18. Meu chefe está em uma videochamada 🗣️</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">on a video call</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">**My boss is on a video call** with the clients.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">**My boss is on a conference call** with the team.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Note: Use **"on a call"** para descrever que alguém está ocupado numa chamada, seja ela de áudio ou vídeo. Use **"on a video call"** para ser mais específico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 18 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que o seu gerente está numa reunião online e não pode ser interrompido?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson18Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson18Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson18Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+             <!-- Lesson 19: Attended a meeting with external personnel -->
+             <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">19. Reunião com equipa internacional 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">I attended a meeting with the people from abroad.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">I **had a meeting with the international team** about the new project.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">We **attended a meeting with the people from abroad** to discuss the partnership.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **"International team"** ou **"people from abroad"** são termos diretos e claros para se referir a colegas de outros países. "Attended" e "had a meeting" são formas válidas de expressar a mesma ideia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 19 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que esteve numa reunião com pessoas de uma empresa parceira?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson19Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson19Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson19Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+
+             <!-- Lesson 20: Attended a meeting with external personnel -->
+             <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">20. Reunião com cliente 🤝</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">external meeting, customer meeting</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">I have an **external meeting** with a new client.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">The team is preparing for a **customer meeting** tomorrow.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: **"External meeting"** é um termo mais genérico para qualquer reunião com pessoas fora da sua organização, e **"customer meeting"** é mais específico para clientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 20 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria ao seu gerente que vai ter uma reunião com um potencial novo cliente?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson20Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson20Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson20Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+            
+            <!-- Horizontal Divider -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="hard-line"></div>
+            </div>
+            
+             <!-- Lesson 21: Vou no escritorio hoje -->
+             <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">21. Vou no escritorio hoje 🏢</h3>
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <p class="text-xs font-extrabold text-gradient bg-gradient-to-r from-purple-400 to-indigo-500">I'm going to the office today.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-yellow-400 to-orange-500">**I am going to the office today** for the team meeting.</li>
+                            <li class="text-xs font-semibold text-gradient bg-gradient-to-r from-teal-400 to-blue-500">She said she **will be in the office today**.</li>
+                        </ul>
+                        <p class="mt-4 text-xs font-semibold text-gray-300">Nota: A tradução literal para "Vou no escritório" é "I'm going to the office". "I'm going to be in the office" também é comum para indicar que estará fisicamente presente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise Box for Lesson 21 -->
+            <div class="animated-box">
+                <div class="animated-box-content">
+                    <h3 class="text-2xl font-bold mb-4 text-netflix-red">Hora do Exercício! ✍️</h3>
+                    <p class="mb-4 text-gray-300">
+                        Como diria a um colega que vai estar no escritório para uma reunião, em vez de trabalhar em casa?
+                    </p>
+                    <div class="flex flex-col space-y-4">
+                        <input id="lesson21Answer" type="text" placeholder="Escreva sua resposta aqui..." class="py-2 px-4 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-netflix-red">
+                        <button onclick="checkLesson21Answer()" class="py-3 px-6 rounded-full bg-netflix-red text-white font-bold hover:bg-red-700 transition-colors">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                    <p id="lesson21Result" class="mt-4 text-center font-bold"></p>
+                </div>
+            </div>
+        </section>
+
+    </script>
+</body>
+</html>
